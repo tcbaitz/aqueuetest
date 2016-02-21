@@ -1,10 +1,16 @@
+#define compiler
+CC=g++
+
+#define flag variables
+CFLAGS=-c -Wall
+
 all: AQTest
 
 AQTest: Aqueuemain.o
-	g++ Aqueuemain.o -o AQTest
+	$(CC) Aqueuemain.o -o AQTest
 
 Aqueuemain.o: Aqueuemain.cpp
-	g++ -c Aqueuemain.cpp
+	$(CC) $(CFLAGS) Aqueuemain.cpp
 
 clean:
 	rm -rf *o AQTest
