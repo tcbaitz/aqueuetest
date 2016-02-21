@@ -9,7 +9,6 @@
 
 #include "aqueue.hpp"
 
-#include "QueueTest.hpp"
 
 //used to run tests
 #include <climits>

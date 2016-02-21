@@ -2,6 +2,8 @@
 // "A Practical Introduction to Data Structures and Algorithm Analysis,
 // Third Edition (C++)" by Clifford A. Shaffer.
 // Source code Copyright (C) 2007-2011 by Clifford A. Shaffer.
+#ifndef QUEUE_HPP
+#define QUEUE_HPP
 
 // Abstract queue class
 template <typename E> class Queue {
@@ -31,3 +33,5 @@ public:
   // Return: The number of elements in the queue.
   virtual int length() const = 0;
 };
+
+#endif

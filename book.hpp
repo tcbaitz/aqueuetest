@@ -6,6 +6,9 @@
 // A collection of various macros, constants, and small functions
 // used for the software examples.
 
+#ifndef BOOK_HPP
+#define BOOK_HPP
+
 // First, include all the standard headers that we need
 #include <iostream>
 #include <cstdlib>
@@ -99,3 +102,5 @@ ostream& operator<<(ostream& s, const Int& i)
   { return s << i.key(); }
 ostream& operator<<(ostream& s, const Int* i)
   { return s << i->key(); }
+
+#endif

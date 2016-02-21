@@ -7,6 +7,9 @@
 // complete AQueue template class
 
 // First, get the declaration for the base stack class
+#ifndef AQUEUE_HPP
+#define AQUEUE_HPP
+
 #include "queue.hpp"
 
 // This is the declaration for AStack.
@@ -51,3 +54,5 @@ public:
   virtual int length() const         // Return length
    { return ((rear+maxSize) - front + 1) % maxSize; }
 };
+
+#endif
